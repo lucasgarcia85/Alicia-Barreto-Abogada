@@ -10760,7 +10760,29 @@ textarea.form-control-lg {
 }
 body {
   font-size: 20px;
-  background-color: #ddd;
+}
+
+.section1 {
+  background-image: url("../../assets/images/Derechodefamilia2.jpg");
+  background-size: cover;
+}
+
+.section2 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.section2 .heading {
+  text-align: center;
+}
+.section2 .servicios {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+.section2 .servicios .servicios_box {
+  width: 20%;
 }
 
 /*# sourceMappingURL=main.css.map */
