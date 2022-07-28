@@ -1,0 +1,12 @@
+.footer_datos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    .datos_oficina{
+        width: 45%;
+    }
+    .datos_map{
+        width: 45%;
+    }
+}
