@@ -10771,29 +10771,106 @@ textarea.form-control-lg {
   width: 45%;
 }
 
+.footer__redes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  gap: 0.5rem;
+  padding: 0rem;
+  background-color: rgb(209, 227, 241);
+  color: rgb(77, 67, 10);
+  font-size: 2rem;
+}
+.footer__redes a span {
+  margin-right: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  transition: all 0.3s;
+}
+.footer__redes a span:hover {
+  color: rgb(117, 155, 211);
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .footer__redes {
+    gap: 2rem;
+  }
+}
+.heading {
+  font-family: Lato, sans-serif;
+  color: #00b3a6;
+  text-shadow: 1px 1px 6px #fff;
+  font-size: 1.5rem;
+}
+
+.tel, .mail {
+  font-family: Lato, sans-serif;
+  color: #00b3a6;
+  text-shadow: 1px 1px 6px #fff;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 21px;
+  border-radius: 5px;
+  background-color: #00b3a6;
+  box-shadow: inset 0 1px 0 0 hsla(0deg, 0%, 100%, 0.3), 0 2px 11px 0 rgba(0, 0, 0, 0.28);
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+}
+
 .section1 {
   background-image: url("../../assets/images/Derechodefamilia2.jpg");
   background-size: cover;
 }
 
 .section2 {
-  display: flex;
-  flex-flow: column nowrap;
+  text-align: center;
+  margin: 1rem 1rem;
 }
 .section2 .heading {
   text-align: center;
 }
 .section2 .servicios {
-  width: 70%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  align-content: center;
+  margin: 0 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
 }
 .section2 .servicios .servicios_box {
-  width: 20%;
+  width: 50%;
+  height: 50%;
 }
 
+@media (min-width: 576px) {
+  .section2 .servicios {
+    display: flex;
+    flex-direction: row;
+    row-gap: 2rem;
+  }
+}
 .fondoTribunales {
   background-image: linear-gradient(180deg, rgba(0, 179, 166, 0.35), rgba(0, 179, 166, 0.35)), url(../../assets/images/tribunalesbuenosairescomollegar.jpg);
   height: 70%;
