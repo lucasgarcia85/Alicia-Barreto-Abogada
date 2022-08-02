@@ -67,17 +67,29 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     padding-left: 20px;
     padding-right: 20px;
     .Foto{
         padding: 10px;
     }
-    .ListaCV{
-        width: 50%;
+    .listaCV{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        .list{
+            list-style: none;
+            text-align: center;
+        }
+        
     }
+}
+@include media-breakpoint-up(sm){
+    .Foto_y_Listacv .listaCV .list {
+        list-style: disc;
+        text-align: left;
+    }
+
 }
