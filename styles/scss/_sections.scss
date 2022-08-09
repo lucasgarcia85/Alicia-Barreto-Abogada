@@ -5,7 +5,7 @@
 
 }
 
-.section2{
+.seccionServicios{
     text-align: center;
     margin: 1rem 1rem;
 
@@ -21,7 +21,13 @@
         row-gap: 1rem;
         align-items: center;
 
-        .servicios_box{
+        @include media-breakpoint-up(sm){
+                display:flex;
+                flex-direction: row;
+                row-gap: 2rem;
+        }
+        
+            .servicios_box{
             width: 50%;
             height: 50%;
             
@@ -29,14 +35,7 @@
     }
 
 }
-@include media-breakpoint-up(sm){
-    .section2 .servicios {
-        display:flex;
-        flex-direction: row;
-        row-gap: 2rem;
-    }
 
-}
 
 
 // section3
@@ -82,14 +81,12 @@
         .list{
             list-style: none;
             text-align: center;
+            @include media-breakpoint-up(sm){
+                    list-style: disc;
+                    text-align: left;
+                
+            }
         }
         
     }
-}
-@include media-breakpoint-up(sm){
-    .Foto_y_Listacv .listaCV .list {
-        list-style: disc;
-        text-align: left;
-    }
-
 }

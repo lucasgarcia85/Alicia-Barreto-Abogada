@@ -11,10 +11,28 @@
 }
 #header{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    row-gap: 20px;
+    @include media-breakpoint-up(md){
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 2rem;
+            margin-right:2rem;
+            }
+    @include media-breakpoint-up(lg){
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 5rem;
+            margin-right:5rem;
+            }
+        
+    .header__info{
+        text-align: center;
+    }
     
 }

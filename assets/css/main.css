@@ -10787,6 +10787,11 @@ textarea.form-control-lg {
   color: rgb(77, 67, 10);
   font-size: 2rem;
 }
+@media (min-width: 768px) {
+  .footer__redes {
+    gap: 2rem;
+  }
+}
 .footer__redes a span {
   margin-right: 2rem;
   margin-bottom: 10px;
@@ -10808,11 +10813,6 @@ textarea.form-control-lg {
   margin-right: 2rem;
 }
 
-@media (min-width: 768px) {
-  .footer__redes {
-    gap: 2rem;
-  }
-}
 .heading {
   font-family: Lato, sans-serif;
   color: #00b3a6;
@@ -10828,10 +10828,32 @@ textarea.form-control-lg {
 
 #header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  row-gap: 20px;
+}
+@media (min-width: 768px) {
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+#header .header__info {
+  text-align: center;
 }
 
 .button {
@@ -10854,14 +10876,14 @@ textarea.form-control-lg {
   background-size: cover;
 }
 
-.section2 {
+.seccionServicios {
   text-align: center;
   margin: 1rem 1rem;
 }
-.section2 .heading {
+.seccionServicios .heading {
   text-align: center;
 }
-.section2 .servicios {
+.seccionServicios .servicios {
   margin: 0 1rem;
   width: 100%;
   display: flex;
@@ -10869,18 +10891,18 @@ textarea.form-control-lg {
   row-gap: 1rem;
   align-items: center;
 }
-.section2 .servicios .servicios_box {
-  width: 50%;
-  height: 50%;
-}
-
 @media (min-width: 576px) {
-  .section2 .servicios {
+  .seccionServicios .servicios {
     display: flex;
     flex-direction: row;
     row-gap: 2rem;
   }
 }
+.seccionServicios .servicios .servicios_box {
+  width: 50%;
+  height: 50%;
+}
+
 .fondoTribunales {
   background-image: linear-gradient(180deg, rgba(0, 179, 166, 0.35), rgba(0, 179, 166, 0.35)), url(../../assets/images/tribunalesbuenosairescomollegar.jpg);
   height: 70%;
@@ -10924,7 +10946,6 @@ textarea.form-control-lg {
   list-style: none;
   text-align: center;
 }
-
 @media (min-width: 576px) {
   .Foto_y_Listacv .listaCV .list {
     list-style: disc;

@@ -25,6 +25,11 @@
     background-color:rgb(209, 227, 241);
     color:rgb(77, 67, 10);
     font-size:2rem;
+
+    @include media-breakpoint-up(md){
+        gap:2rem;
+    }
+    
     
         a {
             span{
@@ -51,12 +56,6 @@
    
 }
 
-@include media-breakpoint-up(md){
-    
-    .footer__redes{
-    gap:2rem;
-    }
-}
 
 
 
