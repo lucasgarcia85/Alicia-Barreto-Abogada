@@ -10770,7 +10770,6 @@ textarea.form-control-lg {
   text-align: center;
 }
 .footer_datos .datos_map {
-  min-width: 400px;
   margin: 1rem;
 }
 
@@ -10878,13 +10877,12 @@ textarea.form-control-lg {
 
 .seccionServicios {
   text-align: center;
-  margin: 1rem 1rem;
+  margin: 3rem 1rem;
 }
 .seccionServicios .heading {
   text-align: center;
 }
 .seccionServicios .servicios {
-  margin: 0 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10935,6 +10933,7 @@ textarea.form-control-lg {
 }
 .Foto_y_Listacv .Foto {
   padding: 10px;
+  max-width: 500px;
 }
 .Foto_y_Listacv .listaCV {
   display: flex;

@@ -7,14 +7,13 @@
 
 .seccionServicios{
     text-align: center;
-    margin: 1rem 1rem;
+    margin: 3rem 1rem;
 
     .heading{
         text-align: center;
     }
 
     .servicios {
-        margin: 0 1rem;
         width: 100%;
         display:flex;
         flex-direction: column;
@@ -72,6 +71,7 @@
     padding-right: 20px;
     .Foto{
         padding: 10px;
+        max-width: 500px;
     }
     .listaCV{
         display: flex;
