@@ -48,12 +48,62 @@
 }
 
 .footer__icontop{
-    font-size: 2rem;
-    height: 2rem;
-    float: right;
-    margin-right: 2rem;
+    position: fixed;
+    bottom: 20px;
+    right:30px;
+    font-size: 3rem;
+    transition: all ease .6s;
+    
+    @include media-breakpoint-up(md){
+        &:hover{
+            scale: 1.4;
+        }
+    }
    
+      
 }
+
+.WapFlotante{
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    font-size: 3rem;
+    transition: all ease .6s;
+
+    @include media-breakpoint-down(md){
+        animation-name: shake;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+   
+    @include media-breakpoint-up(md){
+        &:hover{
+            scale: 1.4;
+        }
+    }
+
+
+    a{
+        text-decoration: none;
+        color: rgb(21, 214, 21);
+        
+    }
+    
+}
+
+@keyframes shake {
+    from {
+      scale: 1.0;
+    }
+    50% {
+        scale:1.3;
+    }
+  
+    to {
+     
+      scale: 1.0;
+    }
+  }
 
 
 
