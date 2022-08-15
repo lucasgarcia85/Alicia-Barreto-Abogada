@@ -1,38 +1,44 @@
-.heading {
-    font-family: Lato, sans-serif;
+/* .heading {
+    font-family: 'PT Sans', sans-serif;
     color: #00b3a6;
     text-shadow: 1px 1px 6px #fff;
     font-size: 1.5rem;
-}
-.tel, .mail{
-    font-family: Lato, sans-serif;
-    color: #00b3a6;
-    text-shadow: 1px 1px 6px #fff;
-}
-#header{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    row-gap: 20px;
-    @include media-breakpoint-up(md){
+} */
+
+header {
+    &>.container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        row-gap: 20px;
+
+        @include media-breakpoint-up(md) {
             flex-direction: row;
             justify-content: space-between;
-            margin-left: 2rem;
-            margin-right:2rem;
-            }
-    @include media-breakpoint-up(lg){
+        }
+
+        @include media-breakpoint-up(lg) {
             flex-direction: row;
             justify-content: space-between;
-            margin-left: 5rem;
-            margin-right:5rem;
-            }
-        
-    .header__info{
-        text-align: center;
+        }
     }
-    
+
+    .tel,
+    .mail {
+        color: #00b3a6;
+        text-shadow: 1px 1px 6px #fff;
+    }
+
+    .header__info {
+        text-align: right;
+
+        p {
+            margin-bottom: 0.15rem;
+        }
+    }
+
 }

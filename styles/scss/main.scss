@@ -5,8 +5,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import "footer";
-@import "header";
-@import "globals";
-@import "sections";
-@import "variables";
+@import "_variables";
+@import "_globals";
+@import "_footer";
+@import "_header";
+@import "_sections";

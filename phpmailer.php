@@ -13,6 +13,9 @@ require 'phpmailer/SMTP.php';
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$telephone = $_POST['telephone'];
+$residence = $_POST['residence'];
+$motive = $_POST['motive'];
 $comment = $_POST['comment'];
 $subject = 'Mensaje recibido desde lucioteposiciona.com';
 
@@ -21,7 +24,6 @@ if( empty(trim($name)) ) $name = 'anonimo';
 $body = <<<HTML
     <h1 style="font-size: 20px;">Mensaje recibido desde lucioteposiciona.com</h1>
     <p>De: $name | $email</p>
-    <!-- <h2>Mensaje:</h2> -->
     $comment
 HTML;
 
@@ -37,8 +39,6 @@ try {
     $mailer->Password = 'jr@gQXC3wG';                          
     $mailer->SMTPSecure = 'ssl';
     $mailer->Port = 465;
-    //$mailer->AltBody = strip_tags($body);
-    //$mailer->CharSet = 'UTF-8';
 
     //Recipients
     $mailer->setFrom( $email, "$name" );
@@ -46,15 +46,12 @@ try {
 
     //Content
     $mailer->isHTML(true);
-    //$mailer->msgHTML($body);
     $mailer->Subject = $subject;
     $mailer->msgHTML($body);
     $mailer->AltBody = strip_tags($body);
     $mailer->CharSet = 'UTF-8';
 
     $mailer->send();
-    //echo "Mail has been sent successfully!";
-    //var_dump($rta);
     header("Location: thank-you.html" );
 
 } catch (Exception $e) {
