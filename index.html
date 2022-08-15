@@ -1,160 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alicia Barreto Abogada</title>
-    <meta name="description" content="Estudio Juridico Alicia Barreto, Abogada egresada UBA, miembro del Instituto de Derecho de Familia del CPACF, Docente derecho de familia y sucesiones.">
-    <meta name="keywords" content="Derecho de Familia, Divorcio, Alimentos, uniones convivenciales, pactos de convivencia, responsabilidad parental, plan de parentabilidad, cuidado personal, tenencia, compensaciones, adopcion, autorizacion salida del pais, sucesiones, caba, abogado, abogada, Alicia Barreto">
-    <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alicia Barreto Abogada</title>
+  <meta name="description"
+    content="Estudio Juridico Alicia Barreto, Abogada egresada UBA, miembro del Instituto de Derecho de Familia del CPACF, Docente derecho de familia y sucesiones.">
+  <meta name="keywords"
+    content="Derecho de Familia, Divorcio, Alimentos, uniones convivenciales, pactos de convivencia, responsabilidad parental, plan de parentabilidad, cuidado personal, tenencia, compensaciones, adopcion, autorizacion salida del pais, sucesiones, caba, abogado, abogada, Alicia Barreto">
+  <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
-  
-    <header id="header">
-        <div class="header__foto">
-          <img src="assets/images/logo-01.png" width="351" alt="" class="image">
+
+  <header id="header">
+    <div class="header__foto">
+      <img src="assets/images/logo-01.png" width="351" alt="" class="image">
+    </div>
+    <div class="header__info">
+      <p class="heading">Hacenos tu consulta ahora</p>
+      <p class="tel"><strong>(011) 4371-1368 | 11-5144-3125 </strong></p>
+      <a class="mail" href="mailto:alicia.barreto@gmail.com" class="mail">alicia.barreto@gmail.com</a>
+    </div>
+  </header>
+  <main>
+
+
+
+    <section class="section1">
+      <div class="section1_left">
+        <h1 class="section1_left_title">Derecho de familia</h1>
+        <p class="section1_left_subtitle">Atención personalizada, profesional y responsable en la búsqueda de soluciones
+          alternativas</p>
+        <p class="section1_left_subtitle2">Atendemos consultas y patrocinamos en el ámbito específico de CABA</p>
+
+      </div>
+      <div class="section1_right">
+        <div class="w-form">
+
+          <form class="form" id="contact-form" method="post" action="phpmailer.php">
+            <input type="text" id="Nombre" name="name" placeholder="Nombre" maxlength="256"
+              required="" class="input w-input"><input type="email" id="email" name="email" placeholder="E-mail" maxlength="256" required="" class="input w-input">
+            <input type="text" id="telefono" name="telephone" placeholder="Teléfono" maxlength="256"
+              required="" class="input w-input">
+            <select id="residence" name="residence" data-name="CABA" required="" class="input w-select">
+              <option value="">Residís de Capital Federal? </option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+            </select>
+            <input type="text" id="motive" name="motive" data-name="Motivo 2" placeholder="Motivo de su consulta"
+              maxlength="256" class="input w-input">
+            <textarea id="Consulta" name="comment" placeholder="Consulta" maxlength="5000" data-name="Consulta"
+              required="" class="input w-input"></textarea>
+            <input type="submit" value="Enviar" data-wait="Por favor espere un segundo..."
+              wait="Por favor espere un segundo..." class="button w-button">
+          </form>
+
         </div>
-        <div class="header__info">
-            <p class="heading">Hacenos tu consulta ahora</p>
-            <p class="tel"><strong>(011) 4371-1368 | 11-5144-3125 </strong></p>
-            <a class="mail" href="mailto:alicia.barreto@gmail.com" class="mail">alicia.barreto@gmail.com</a>
+    </section>
+    <section class="seccionServicios">
+      <h2 class="heading mb-3">Servicios</h2>
+      <div class="servicios">
+        <div class="servicios_box"><img src="assets/images/family.png" width="85" alt="">
+          <p>Derecho de familia</p>
         </div>
-     </header>
-    <main>
-      
-        
-      
-        <section class="section1">
-                <div class="section1_left">
-                  <h1 class="section1_left_title">Derecho de familia</h1>
-                  <p class="section1_left_subtitle">Atención personalizada, profesional y responsable en la búsqueda de soluciones alternativas</p>
-                  <p class="section1_left_subtitle2">Atendemos consultas y patrocinamos en el ámbito específico de CABA</p>
+        <div class="servicios_box"><img src="assets/images/diploma-1.png" width="85" alt="">
+          <p>Divorcio, uniones convivenciales, pactos de convivencia, responsabilidad parental, plan de parentabilidad,
+            cuidado personal (tenencia)</p>
+        </div>
+        <div class="servicios_box"><img src="assets/images/diet.png" width="85" alt="">
+          <p>Alimentos, compensaciones</p>
+        </div>
+      </div>
+      <div class="servicios">
+        <div class="servicios_box"><img src="assets/images/woman-and-child-holding-hands.png" width="85" alt="">
+          <p>Adopción</p>
+        </div>
+        <div class="servicios_box"><img src="assets/images/social-care.png" width="85" alt="">
+          <p>Autorización Judicial de salida del País</p>
+        </div>
+        <div class="servicios_box"><img src="assets/images/diploma-1.png" width="85" alt="">
+          <p>Sucesiones</p>
+        </div>
+      </div>
+      <p class="mt-3"><a href="#top" class="button">Consultar</a></p>
 
-                </div>
-                <div class="section1_right">
-                    <div class="w-form">
-                      <form id="email-form" name="email-form" data-name="Email Form" class="form">
-                      <input type="text" id="Nombre" name="Nombre" data-name="Nombre" placeholder="Nombre" maxlength="256" required="" class="input w-input"><input type="email" id="email" name="email" data-name="Email" placeholder="Email" maxlength="256" required="" class="input w-input">
-                      <input type="text" id="Telefono" name="Telefono" data-name="Telefono" placeholder="Teléfono" maxlength="256" required="" class="input w-input">
-                      <select id="CABA" name="CABA" data-name="CABA" required="" class="input w-select">
-                        <option value="">Residís de Capital Federal? </option>
-                        <option value="Si">Si</option><option value="No">No</option>
-                      </select>
-                      <input type="text" id="Motivo-2" name="Motivo-2" data-name="Motivo 2" placeholder="Motivo de su consulta" maxlength="256" class="input w-input">
-                      <textarea id="Consulta" name="Consulta" placeholder="Consulta" maxlength="5000" data-name="Consulta" required="" class="input w-input"></textarea>
-                      <input type="submit" value="Enviar" data-wait="Por favor espere un segundo..." wait="Por favor espere un segundo..." class="button w-button">
-                    </form>
-                      
-                </div>
-        </section>
-        <section class="seccionServicios">
-          <h2 class="heading mb-3">Servicios</h2>
-          <div class="servicios">
-              <div class="servicios_box"><img src="assets/images/family.png" width="85" alt="">
-                <p>Derecho de familia</p>
-              </div>
-              <div class="servicios_box"><img src="assets/images/diploma-1.png" width="85" alt="">
-                <p>Divorcio, uniones convivenciales, pactos de convivencia, responsabilidad parental, plan de parentabilidad, cuidado personal (tenencia)</p>
-              </div>
-              <div class="servicios_box"><img src="assets/images/diet.png" width="85" alt="">
-                <p>Alimentos, compensaciones</p>
-              </div>
-          </div>
-          <div class="servicios">
-              <div class="servicios_box"><img src="assets/images/woman-and-child-holding-hands.png" width="85" alt="">
-                <p>Adopción</p>
-              </div>
-              <div class="servicios_box"><img src="assets/images/social-care.png" width="85" alt="">
-                <p>Autorización Judicial de salida del País</p>
-              </div>
-              <div class="servicios_box"><img src="assets/images/diploma-1.png" width="85" alt="">
-                <p>Sucesiones</p>
-              </div>
-           </div>
-           <p class="mt-3"><a href="#top" class="button">Consultar</a></p>
-              
-        </section>
+    </section>
 
-        <section class="section3">
+    <section class="section3">
 
-            <div class="fondoTribunales">
-              <div class="contenidoTexto">
-                
-                <h3 class="titulomedio">El estudio cuenta con un equipo multidisciplinario, en caso que el cliente lo desee, para poder trabajar en forma conjunta las situaciones conflictivas</h3><a href="#top" class="button">Consultar</a>
+      <div class="fondoTribunales">
+        <div class="contenidoTexto">
 
-              </div>
-            </div>
-            
-            <div class="Foto_y_Listacv">
-              
-              <div class="Foto">
-                <img src="assets/images/alicia1-1.png" width="100%" alt="Fotografia de Alicia Barreto" class="fotoAlicia">
-              </div>
-              
-              <div class="listaCV">
-                <h1 class="tel">Alicia <strong>Barreto</strong></h1>
-                <ul role="list" class="list">
-                  <li>Abogada egresada UBA </li>
-                  <li>Miembro del Instituto de Derecho de Familia del CPACF</li>
-                  <li>Diplomada en Derecho de Familia UAI</li>
-                  <li>Habilitada para el ejercicio profesional en la CABA</li>
-                  <li>Docente universitaria en Derecho de Familia y Sucesiones, en la <strong>UBA y UAI</strong></li>
-                </ul>
-              </div>
-              
-            </div>
-                  
-        </section>
- 
-</main>
-<hr>
-<footer>
-  <div class="footer_datos">
+          <h3 class="titulomedio">El estudio cuenta con un equipo multidisciplinario, en caso que el cliente lo desee,
+            para poder trabajar en forma conjunta las situaciones conflictivas</h3><a href="#top"
+            class="button">Consultar</a>
+
+        </div>
+      </div>
+
+      <div class="Foto_y_Listacv">
+
+        <div class="Foto">
+          <img src="assets/images/alicia1-1.png" width="100%" alt="Fotografia de Alicia Barreto" class="fotoAlicia">
+        </div>
+
+        <div class="listaCV">
+          <h1 class="tel">Alicia <strong>Barreto</strong></h1>
+          <ul role="list" class="list">
+            <li>Abogada egresada UBA </li>
+            <li>Miembro del Instituto de Derecho de Familia del CPACF</li>
+            <li>Diplomada en Derecho de Familia UAI</li>
+            <li>Habilitada para el ejercicio profesional en la CABA</li>
+            <li>Docente universitaria en Derecho de Familia y Sucesiones, en la <strong>UBA y UAI</strong></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+  <hr>
+  <footer>
+    <div class="footer_datos">
       <div class="datos_oficina">
-        
+
         <p class="tel"> <strong>OFICINA</strong></p>
         <p class="tel">Uruguay 532, piso 1, oficina 11, Capital Federal</p>
         <p class="tel">(011) 4371-1368 | 11-5144-3125</p>
         <div class="datos_oficina_redes">
-          
-          <a href="https://api.whatsapp.com/send?phone=5491151443125" target="_blank"><span class="fab fa-whatsapp" title="1151443125" ></span></a>
+
+          <a href="https://api.whatsapp.com/send?phone=5491151443125" target="_blank"><span class="fab fa-whatsapp"
+              title="1151443125"></span></a>
           <a href="https://es-la.facebook.com/sywbebidas/" target="_blank"><span class="fab fa-facebook"></span></a>
           <a href="https://www.instagram.com/sywbebidas/" target="_blank"><span class="fab fa-instagram"></span></a>
-          <a href="mailto:alicia.barreto@gmail.com" target="_blank"><span class="fas fa-envelope"  title="alicia.barreto@gmail.com"></span></a>
+          <a href="mailto:alicia.barreto@gmail.com" target="_blank"><span class="fas fa-envelope"
+              title="alicia.barreto@gmail.com"></span></a>
         </div>
-        
-      </div>
-      
-      <div class="datos_map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.068529285423!2d-58.388863284770345!3d-34.60242858045982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6edf51863%3A0x4134ca4b7b2d514a!2sUruguay+532%2C+C1015ABL+CABA!5e0!3m2!1ses!2sar!4v1510931924149" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
 
       </div>
-  </div>
-  
-  <!-- <div class="footer__redes">
+
+      <div class="datos_map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.068529285423!2d-58.388863284770345!3d-34.60242858045982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6edf51863%3A0x4134ca4b7b2d514a!2sUruguay+532%2C+C1015ABL+CABA!5e0!3m2!1ses!2sar!4v1510931924149"
+          width="100%" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+
+      </div>
+    </div>
+
+    <!-- <div class="footer__redes">
       <a href="https://api.whatsapp.com/send?phone=5491122334455" target="_blank"><span class="fab fa-whatsapp"></span></a>
       <a href="https://es-la.facebook.com/sywbebidas/" target="_blank"><span class="fab fa-facebook"></span></a>
       <a href="https://www.instagram.com/sywbebidas/" target="_blank"><span class="fab fa-instagram"></span></a>
       <a href="mailto:alicia.barreto@gmail.com" target="_blank"><span class="fas fa-envelope" title="alicia.barreto@gmail.com"></span></a>
       
   </div> -->
-  
-  <div class="footer__icontop">
-    <a href="#header" class="back_to_top"><i class="fas fa-angle-double-up"></i></a>
-  </div>
-  <div class="WapFlotante">
-    <a href="https://api.whatsapp.com/send?phone=5491122334455" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  </div>
+
+    <div class="footer__icontop">
+      <a href="#header" class="back_to_top"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="WapFlotante">
+      <a href="https://api.whatsapp.com/send?phone=5491122334455" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
 
 
-</footer>
-   
-  
+  </footer>
+
+
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 
 </body>
+
 </html>
