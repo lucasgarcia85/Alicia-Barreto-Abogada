@@ -17,14 +17,16 @@ body {
     text-align: center;
     text-decoration: none;
     border: 0;
-    min-width: 170px;
+    min-width: 200px;
 }
 
 h1, h2 {
     //text-shadow: 1px 1px 2px #555;
     line-height: 1.15;
+    letter-spacing: .15em;
     color: $color-green;
     font-weight: 700;
+    text-shadow: 0.07em 0.04em #2e5020;
 }
 
 h1 {
@@ -39,6 +41,16 @@ h2 {
     @include media-breakpoint-up(md) {
         font-size: 2.5rem;
     }
+    &:after{
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: rgba(171, 150, 35, 0.8);
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
 @keyframes shake {
@@ -54,4 +66,8 @@ h2 {
 
         scale: 1.0;
     }
+}
+.iconPhone, .iconLocation, .iconMail{
+    margin-right: 0.5rem;
+
 }

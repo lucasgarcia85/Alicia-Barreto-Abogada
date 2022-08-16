@@ -24,6 +24,16 @@ header {
         @include media-breakpoint-up(lg) {
             flex-direction: row;
             justify-content: space-between;
+     
+        }
+        .header__foto{
+
+            .image{
+                width: 280px;
+                @include media-breakpoint-up(md){
+                width: 351px;
+                }
+            }
         }
     }
 
@@ -34,7 +44,11 @@ header {
     }
 
     .header__info {
-        text-align: right;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            text-align: right;
+        }
 
         p {
             margin-bottom: 0.15rem;

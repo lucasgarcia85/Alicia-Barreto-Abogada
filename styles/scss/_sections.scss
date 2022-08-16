@@ -28,14 +28,37 @@
                     &option[disabled=disabled] {
                         color: #eee;
                     }
+
+                }
+                input::placeholder{
+                    color: rgba(143, 137, 137, 0.63);
                 }
             }
         }
     }
 
     &_left {
+        text-align: center;
+
         @include media-breakpoint-up(lg) {
             width: 60%;
+            text-align: left;
+        }
+
+        &_subtitle{
+            margin-bottom: 13px;
+            padding-top: 4px;
+            padding-bottom: 5px;
+            border-radius: 6px;
+            background-color: hsla(0, 0%, 100%, 0.39);
+            color: #000;
+        }
+        &_subtitle2{
+            padding: 6px 3px;
+            border-radius: 6px;
+            background-color: #ffa617;
+            color: #fff;
+
         }
     }
 
@@ -93,7 +116,7 @@
     .contenidoTexto {
         color: white;
         text-align: center;
-        padding: 50px 0;
+        padding: 70px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
