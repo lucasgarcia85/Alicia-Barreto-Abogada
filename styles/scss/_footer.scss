@@ -31,7 +31,7 @@ footer {
                     }
 
                     span:hover {
-                        color: rgb(117, 155, 211);
+                        color: $color-green;
                         transform: scale(1.3);
                         transition: all .3s;
                     }
@@ -72,6 +72,7 @@ footer {
         display:none;
         font-size: 2.5rem;
         transition: all ease .6s;
+        
         a {
             color: $color-green;
         }
