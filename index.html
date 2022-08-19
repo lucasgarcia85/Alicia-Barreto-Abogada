@@ -15,22 +15,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-  <link rel="stylesheet" href="assets/css/aos.css" > 
+  <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Alicia Barreto Abogada",
+      "image": "https://www.aliciabarreto.com/assets/images/logo-01.png",
+      "@id": "",
+      "url": "https://www.aliciabarreto.com",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "",
+        "postalCode": "",
+        "addressCountry": "AR"
+      }
+    }
+  </script>
 </head>
 
 <body>
 
   <header id="header">
     <div class="container">
-      <div class="header__foto"data-aos="fade-right"data-aos-duration="2000">
+      <div class="header__foto" data-aos="fade-right" data-aos-duration="2000">
         <img src="assets/images/logo-01.png" alt="Logo Alicia Barreto" class="image">
       </div>
-      <div class="header__info"data-aos="fade-left"data-aos-anchor="#example-anchor"data-aos-offset="500"
-      data-aos-duration="2000">
+      <div class="header__info" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+        data-aos-duration="2000">
         <p class="heading">Hacenos tu consulta ahora</p>
-        <p class="tel"><i class="fa-solid fa-phone fa-lg iconPhone"></i><strong>(011) 4371-1368 | 11-5144-3125 </strong></p>
-        <a class="mail" href="mailto:alicia.barreto@gmail.com" class="mail"><i class="fa-solid fa-envelope fa-lg iconMail"></i>alicia.barreto@gmail.com</a>
+        <p><i class="fa-solid fa-phone fa-lg iconPhone"></i>(011) 4371-1368 | 11-5144-3125</p>
+        <a class="mail" href="mailto:alicia.barreto@gmail.com" class="mail"><i
+            class="fa-solid fa-envelope fa-lg iconMail"></i>alicia.barreto@gmail.com</a>
       </div>
     </div>
   </header>
@@ -41,71 +60,85 @@
       <div class="container">
         <div class="section1_left">
           <h1 class="section1_left_title">Derecho de familia</h1>
-          <p class="section1_left_subtitle">Atención personalizada, profesional y responsable en la búsqueda de soluciones
+          <p class="section1_left_subtitle">Atención personalizada, profesional y responsable en la búsqueda de
+            soluciones
             alternativas.</p>
           <p class="section1_left_subtitle2">Atendemos consultas y patrocinamos en el ámbito específico de CABA.</p>
         </div>
         <div class="section1_right">
           <div class="w-form">
-  
-            <form class="form" id="contact-form" method="post" action="phpmailer.php">
+
+            <form class="form" id="contact-form" method="post" action="phpmailer.php" enctype="multipart/form-data">
               <div class="form-group">
-                <input type="text" id="Nombre" name="name" placeholder="Nombre" maxlength="256"
-                  required="required" class="form-control">
+                <input type="text" id="Nombre" name="name" placeholder="Nombre" maxlength="256" required="required"
+                  class="form-control">
+                  <div id="name-error" class="error-msg">Nombre inválido</div>
               </div>
               <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="E-mail" maxlength="256" class="form-control" required="required">
+                <input type="email" id="email" name="email" placeholder="E-mail" maxlength="256" class="form-control"
+                  required="required">
+                  <div id="email-error" class="error-msg">Nombre inválido</div>
               </div>
               <div class="form-group">
-                <input type="text" id="telefono" name="telephone" placeholder="Teléfono" maxlength="256"
-                  required="" class="form-control" required="required">
+                <input type="text" id="telefono" name="telephone" placeholder="Teléfono" maxlength="256" required=""
+                  class="form-control" required="required">
+                  <div id="telephone-error" class="error-msg">Nombre inválido</div>
               </div>
               <div class="form-group">
-                <select id="residence" name="residence" class="form-control" required="required">
+                <select id="residence" name="residence" class="form-control">
                   <option value="" disabled="disabled" selected="selected">Residís de Capital Federal? </option>
                   <option value="Si">Si</option>
                   <option value="No">No</option>
                 </select>
               </div>
               <div class="form-group">
-                <input type="text" id="motive" name="motive" placeholder="Motivo de su consulta"
-                  maxlength="256" class="form-control" required="required">
+                <input type="text" id="motive" name="motive" placeholder="Motivo de su consulta" maxlength="256"
+                  class="form-control" required="required">
+                  <div id="motive-error" class="error-msg">Nombre inválido</div>
               </div>
               <div class="form-group">
-                <textarea id="Consulta" name="comment" placeholder="Consulta" maxlength="5000" class="form-control" required="required" rows="4"></textarea>
+                <textarea id="Consulta" name="comment" placeholder="Consulta" maxlength="5000" class="form-control"
+                  required="required" rows="4"></textarea>
+                  <div id="comment-error" class="error-msg">Nombre inválido</div>
               </div>
               <div class="form-group">
                 <input type="submit" value="Enviar" class="button form-control">
               </div>
             </form>
-  
+
           </div>
         </div>
       </div>
     </section>
 
     <section class="seccionServicios">
-      <h2 class="heading mb-5">Servicios</h2>
+      <h2 class="heading">Servicios</h2>
       <div class="servicios">
-        <div class="servicios_box"data-aos="flip-down"data-aos-duration="2000"><img src="assets/images/family.png" width="85" alt="">
+        <div class="servicios_box" data-aos="fade-up" data-aos-offset="500" data-aos-duration="1500">
+          <img src="assets/images/family.png" width="85" alt="">
           <p>Derecho de familia</p>
         </div>
-        <div class="servicios_box"data-aos="flip-down"data-aos-duration="2000"><img src="assets/images/diploma-1.png" width="85" alt="">
+        <div class="servicios_box" data-aos="fade-up" data-aos-offset="500" data-aos-duration="1500">
+          <img src="assets/images/diploma-1.png" width="85" alt="">
           <p>Divorcio, uniones convivenciales, pactos de convivencia, responsabilidad parental, plan de parentabilidad,
             cuidado personal (tenencia)</p>
         </div>
-        <div class="servicios_box"data-aos="flip-down"data-aos-duration="2000"><img src="assets/images/diet.png" width="85" alt="">
+        <div class="servicios_box" data-aos="fade-up" data-aos-offset="500" data-aos-duration="1500">
+          <img src="assets/images/diet.png" width="85" alt="">
           <p>Alimentos, compensaciones</p>
         </div>
       </div>
       <div class="servicios">
-        <div class="servicios_box"data-aos="flip-down"data-aos-duration="2000"><img src="assets/images/woman-and-child-holding-hands.png" width="85" alt="">
+        <div class="servicios_box" data-aos="fade-up" data-aos-offset="500" data-aos-duration="1500">
+          <img src="assets/images/woman-and-child-holding-hands.png" width="85" alt="">
           <p>Adopción</p>
         </div>
-        <div class="servicios_box"data-aos="flip-down"data-aos-duration="2000"><img src="assets/images/social-care.png" width="85" alt="">
+        <div class="servicios_box" data-aos="fade-up" data-aos-offset="500" data-aos-duration="1500">
+          <img src="assets/images/social-care.png" width="85" alt="">
           <p>Autorización Judicial de salida del País</p>
         </div>
-        <div class="servicios_box"data-aos="flip-down"data-aos-duration="2000"><img src="assets/images/diploma-1.png" width="85" alt="">
+        <div class="servicios_box" data-aos="fade-up" data-aos-offset="500" data-aos-duration="1500">
+          <img src="assets/images/diploma-1.png" width="85" alt="">
           <p>Sucesiones</p>
         </div>
       </div>
@@ -113,64 +146,64 @@
 
     </section>
 
-    <section class="section3">
-      
+    <section class="section3 pt-0">
       <div class="fondoTribunales">
         <div class="container">
           <div class="contenidoTexto">
             <h3 class="titulomedio">El estudio cuenta con un equipo multidisciplinario, en caso que el cliente lo desee,
               para poder trabajar en forma conjunta las situaciones conflictivas.</h3>
-              <a href="#top" class="button">Consultar</a>
+            <a href="#top" class="button">Consultar</a>
           </div>
         </div>
       </div>
 
       <div class="container">
         <div class="Foto_y_Listacv">
-          <div class="Foto"data-aos="zoom-in-up"data-aos-duration="2300">
+          <div class="Foto" data-aos="zoom-in-up" data-aos-duration="2000">
             <img src="assets/images/alicia1-1.png" width="100%" alt="Fotografía de Alicia Barreto" class="fotoAlicia">
           </div>
-          <div class="listaCV"data-aos="flip-left"data-aos-duration="3000">
+          <div class="listaCV" data-aos="flip-left" data-aos-duration="2500">
             <h2 class="tel"><strong>Alicia Barreto</strong></h2>
             <ul role="list" class="list">
               <li>Abogada egresada UBA </li>
               <li>Miembro del Instituto de Derecho de Familia del CPACF</li>
               <li>Diplomada en Derecho de Familia UAI</li>
               <li>Habilitada para el ejercicio profesional en la CABA</li>
-              <li>Docente universitaria en Derecho de Familia y Sucesiones, en la <strong>UBA y UAI</strong></li>
+              <li>Docente universitaria en Derecho de Familia y Sucesiones en la <strong>UBA</strong></li>
+              <li>Docente universitaria en Derecho de Familia en la <strong>UAI</strong></li>
             </ul>
           </div>
-  
+
         </div>
       </div>
-
-
     </section>
 
   </main>
-<!--   <hr> -->
+  <!--   <hr> -->
 
+  <!-- FOOTER: BEGIN -->
   <footer>
     <div class="container">
       <div class="footer_datos">
         <div class="datos_oficina">
           <address>
             <p class="tel"> <strong>OFICINA</strong></p>
-            <p class="tel"><i class="fa-solid fa-location-dot fa-lg iconLocation"></i>Uruguay 532, piso 1, oficina 11, Capital Federal</p>
+            <p class="tel"><i class="fa-solid fa-location-dot fa-lg iconLocation"></i>Uruguay 532, piso 1, oficina 11,
+              Capital Federal</p>
           </address>
-            <p class="tel"><i class="fa-solid fa-phone fa-lg iconPhone"></i>(011) 4371-1368 | 11-5144-3125</p>
-          <div class="datos_oficina_redes"data-aos="zoom-in"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2700">
-            <a href="https://api.whatsapp.com/send?phone=5491151443125" target="_blank"><span class="fab fa-whatsapp"data-aos="flip-up"data-aos-duration="2400"
-                title="11 5144 3125"></span></a>
-            <a href="#" target="_blank"><span class="fab fa-facebook"></span></a>
-            <a href="https://www.linkedin.com/in/alicia-barreto-44a96b33/" target="_blank"><span class="fa-brands fa-linkedin"></span></a>
-            <a href="mailto:alicia.barreto@gmail.com" target="_blank"><span class="fas fa-envelope"title="alicia.barreto@gmail.com"></span></a>
+          <p class="tel"><i class="fa-solid fa-phone fa-lg iconPhone"></i>(011) 4371-1368 | 11-5144-3125</p>
+          <div class="datos_oficina_redes" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2700">
+            <a href="https://api.whatsapp.com/send?phone=5491151443125" target="_blank"><span class="fab fa-whatsapp"
+                data-aos="flip-up" data-aos-duration="2400" title="11 5144 3125"></span></a>
+            <!-- <a href="#" target="_blank"><span class="fab fa-facebook"></span></a> -->
+            <a href="https://www.linkedin.com/in/alicia-barreto-44a96b33/" target="_blank"><span
+                class="fa-brands fa-linkedin"></span></a>
+            <a href="mailto:alicia.barreto@gmail.com" target="_blank"><span class="fas fa-envelope"
+                title="alicia.barreto@gmail.com"></span></a>
           </div>
-  
+
         </div>
-  
+
         <div class="datos_map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.068529285423!2d-58.388863284770345!3d-34.60242858045982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6edf51863%3A0x4134ca4b7b2d514a!2sUruguay+532%2C+C1015ABL+CABA!5e0!3m2!1ses!2sar!4v1510931924149"
@@ -180,22 +213,94 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy 2022 Alicia Barreto.Todos los derechos reservados.</p>
-    </div>
-    
-    <div class="footer__icontop">
+      <p>&copy 2022 Alicia Barreto. Todos los derechos reservados.</p>
+      <div class="footer__icontop">
         <a href="#header" class="back_to_top"><i class="fas fa-angle-double-up"></i></a>
-    </div>
-  
-    <div class="WapFlotante">
-      <a href="https://api.whatsapp.com/send?phone=5491122334455" target="_blank" class="linkWsp"><img src="assets/images/logo-whatsapp-png.webp" alt="logo whatsapp" class="logoWsp" width="60px"></a>
-  
-      <!-- <a href="https://api.whatsapp.com/send?phone=5491122334455" target="_blank" class="linkWsp"><i class="fab fa-whatsapp"></i></a> -->
+      </div>
     </div>
 
+    <div class="WapFlotante">
+      <a href="https://api.whatsapp.com/send?phone=5491122334455" target="_blank" class="linkWsp"><img
+          src="assets/images/logo-whatsapp-png.webp" alt="logo whatsapp" class="logoWsp" width="60px"></a>
+      <!-- <a href="https://api.whatsapp.com/send?phone=5491122334455" target="_blank" class="linkWsp"><i class="fab fa-whatsapp"></i></a> -->
+    </div>
   </footer>
+  <!-- FOOTER: END -->
+
   <script src="assets/scripts/aos.js"></script>
-  <script>AOS.init();</script>
+  <script src="./assets/scripts/scripts.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script>
+    const constraints = {
+      name: {
+        presence: {
+          allowEmpty: false
+        }
+      },
+      email: {
+        presence: {
+          allowEmpty: false
+        },
+        email: true
+      },
+      telephone: {
+        presence: {
+          allowEmpty: false
+        }
+      },
+      motive: {
+        presence: {
+          allowEmpty: false
+        }
+      },
+      comment: {
+        presence: {
+          allowEmpty: false
+        }
+      }
+    };
+
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function (event) {
+      const formValues = {
+        name: form.elements.name.value,
+        email: form.elements.email.value,
+        telephone: form.elements.telephone.value,
+        motive: form.elements.motive.value,
+        comment: form.elements.comment.value
+      };
+
+      const errors = validate(formValues, constraints);
+
+      if (errors) {
+        event.preventDefault();
+
+        //console.log(errors);
+        Object.keys(errors).forEach(key => {
+          //console.log(key, errors[key]);
+          //console.log(key);
+          document.querySelector(`#${key}-error`).classList.add('visible');
+        });
+
+        /* const errorMessage = Object.values(errors).map(function (fieldValues) {
+            return fieldValues.join(', ')
+          }).join("\n"); */
+
+        //alert(errorMessage);
+      }
+    }, false);
+
+    function onRecaptchaSuccess() {
+      document.getElementById('contact-form').submit()
+    }
+  </script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+
 </body>
 
 </html>

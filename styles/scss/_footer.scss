@@ -1,5 +1,5 @@
 footer {
-    background-color: #f5f5f5;
+    background-color: #eee;
     
     .footer_datos {
         display: flex;
@@ -21,13 +21,14 @@ footer {
                       
             .datos_oficina_redes {
                 font-size: 2rem;
+                margin-top: 1.5rem;
 
                 &>a {
-                    margin: 0 .75rem;
+                    margin: 0 .55rem;
 
                     span {
-                        color: rgb(0, 0, 0);
-                        transition: all .3s;
+                        color: rgba(0, 0, 0, 0.85);
+                        transition: all .3s ease-in;
                     }
 
                     span:hover {
@@ -69,22 +70,24 @@ footer {
 
    
     .footer__icontop {
-        display:none;
-        font-size: 2.5rem;
-        transition: all ease .6s;
-        
+        font-size: 1.5rem;
+        display: block;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
         a {
             color: $color-green;
+            display: inline-block;
+            transition: all ease .6s;
+            &:hover {
+                scale: 1.3;
+            }
         }
 
         @include media-breakpoint-up(md) {
-            display:block;
-            position: fixed;
+            font-size: 2.4rem;
             bottom: 6px;
             right: 25px;
-            &:hover {
-                scale: 1.4;
-            }
         }
 
     }
@@ -104,7 +107,7 @@ footer {
 
         @include media-breakpoint-up(md) {
             &:hover {
-                scale: 1.4;
+                scale: 1.2;
             }
         }
 
@@ -124,6 +127,7 @@ footer {
         font-size: .8rem;
         text-align: center;
         padding: 1.5rem 0;
+        position: relative;
         p {
             margin: 0;
         }

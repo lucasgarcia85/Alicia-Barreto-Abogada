@@ -17,12 +17,12 @@ $telephone = $_POST['telephone'];
 $residence = $_POST['residence'];
 $motive = $_POST['motive'];
 $comment = $_POST['comment'];
-$subject = 'Mensaje recibido desde lucioteposiciona.com';
+$subject = 'Mensaje recibido desde aliciabarreto.com';
 
 if( empty(trim($name)) ) $name = 'anonimo';
 
 $body = <<<HTML
-    <h1 style="font-size: 20px;">Mensaje recibido desde lucioteposiciona.com</h1>
+    <h1 style="font-size: 20px;">Mensaje recibido desde aliciabarreto.com</h1>
     <p>De: $name | $email</p>
     $comment
 HTML;
@@ -33,16 +33,16 @@ try {
     //Server setting
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
-    $mailer->Host = 'c1591626.ferozo.com';
+    $mailer->Host = 'c1491759.ferozo.com';
     $mailer->SMTPAuth = true;  
-    $mailer->Username = 'no-reply@c1591626.ferozo.com';
-    $mailer->Password = 'jr@gQXC3wG';                          
+    $mailer->Username = 'no-reply@c1491759.ferozo.com';
+    $mailer->Password = 'REHiW3C69@';                          
     $mailer->SMTPSecure = 'ssl';
     $mailer->Port = 465;
 
     //Recipients
     $mailer->setFrom( $email, "$name" );
-    $mailer->addAddress('no-reply@c1591626.ferozo.com','Sitio web');
+    $mailer->addAddress('no-reply@c1491759.ferozo.com','Sitio web');
 
     //Content
     $mailer->isHTML(true);

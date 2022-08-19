@@ -3,7 +3,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding: 3rem 0 2rem;
 
     &>.container {
         display: flex;
@@ -29,10 +28,22 @@
                         color: #eee;
                     }
 
+                    &::placeholder{
+                        color: rgba(143, 137, 137, 0.85);
+                    }
+
                 }
-                input::placeholder{
-                    color: rgba(143, 137, 137, 0.63);
+
+                .error-msg {
+                    color: #f00000;
+                    font-size: 14px;
+                    padding-top: 5px;
+                    display: none;
+                    &.visible {
+                        display: block;
+                    }
                 }
+                
             }
         }
     }
@@ -47,14 +58,14 @@
 
         &_subtitle{
             margin-bottom: 13px;
-            padding-top: 4px;
-            padding-bottom: 5px;
+            padding: 7px 10px;
             border-radius: 6px;
             background-color: hsla(0, 0%, 100%, 0.39);
             color: #000;
         }
         &_subtitle2{
-            padding: 6px 3px;
+            display: inline-block;
+            padding: 7px 10px;
             border-radius: 6px;
             background-color: #ffa617;
             color: #fff;
@@ -70,12 +81,13 @@
 
 }
 
+//SECTION SERVICES
 .seccionServicios {
     text-align: center;
-    margin: 3rem 1rem;
 
     .heading {
         text-align: center;
+        margin-bottom: 4rem;
     }
 
     .servicios {
@@ -94,6 +106,7 @@
         .servicios_box {
             width: 50%;
             height: 50%;
+            margin-bottom: 2rem;
             img {
                 margin-bottom: 1rem;
             }
@@ -103,11 +116,10 @@
 }
 
 
-
 // section3
 .fondoTribunales {
-    background-image: linear-gradient(180deg, rgba(0, 179, 166, 0.5), rgba(0, 179, 166, 0.5)), url(../../assets/images/tribunalesbuenosairescomollegar.jpg);
-    height: 70%;
+    background-image: linear-gradient(180deg, rgba(0, 82, 76, 0.7), rgba(0, 148, 138, 0.7)), url(../../assets/images/tribunalesbuenosairescomollegar.jpg);
+    //height: 70%;
     background-attachment: scroll, fixed;
     background-size: cover;
     display: flex;
@@ -126,15 +138,15 @@
 }
 
 .Foto_y_Listacv {
-    margin: 4rem 0;
+    margin: 4rem 0 1rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+/*     padding-left: 20px;
+    padding-right: 20px; */
 
     .Foto {
         max-width: 600px;
@@ -147,24 +159,35 @@
         align-items: center;
         justify-content: center;
         @include media-breakpoint-up(md) {
-            margin-left: 1rem;
+            margin-left: 3rem;
         }
 
         .list {
             list-style: none;
             padding-left:0;
             text-align: center;
-            margin-top:15px;
+            margin-bottom: 0;
+            margin-top: 2rem;
 
             li {
                 margin-bottom: .5rem;
+                border-bottom: 1px solid $color-green;
+                padding-bottom: 0.5rem;
+                &:last-child {
+                    border: 0;
+                }
             }
 
-            @include media-breakpoint-up(sm) {
-                list-style: disc;
+            @include media-breakpoint-up(md) {
                 text-align: left;
             }
         }
 
     }
+}
+
+//THANK YOU PAGE
+.thank-you {
+    margin-top: 5rem;
+    text-align: center;
 }
