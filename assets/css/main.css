@@ -10806,10 +10806,10 @@ h1, .h1,
 h2,
 .h2 {
   line-height: 1.15;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.01em;
   color: #00b3a6;
   font-weight: 700;
-  text-shadow: 1px 1px 1px #555;
+  text-shadow: 1px 1px 3px #222;
   margin-bottom: 1rem;
 }
 
@@ -11165,7 +11165,7 @@ header .header__info p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   /*     padding-left: 20px;
       padding-right: 20px; */
 }

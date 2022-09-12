@@ -24,6 +24,9 @@ if( empty(trim($name)) ) $name = 'anonimo';
 $body = <<<HTML
     <h1 style="font-size: 20px;">Mensaje recibido desde aliciabarreto.com</h1>
     <p>De: $name | $email</p>
+    <p>Teléfono: $telephone | Reside en Capital: $residence</p>
+    <p>Motivo: $motive</p>
+    <hr />
     $comment
 HTML;
 

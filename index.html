@@ -35,6 +35,16 @@
       }
     }
   </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-238075556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-238075556-1');
+  </script>
 </head>
 
 <body>
@@ -85,7 +95,7 @@
                   <div id="telephone-error" class="error-msg">Nombre inválido</div>
               </div>
               <div class="form-group">
-                <select id="residence" name="residence" class="form-control">
+                <select id="residence" name="residence" class="form-control" aria-label="Residencia">
                   <option value="" disabled="disabled" selected="selected">Residís de Capital Federal? </option>
                   <option value="Si">Si</option>
                   <option value="No">No</option>
@@ -213,7 +223,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy <span class="year-copy"></span> Alicia Barreto. Todos los derechos reservados.</p>
+      <p>&copy<span class="year-copy"></span> Alicia Barreto. Todos los derechos reservados.</p>
       <div class="footer__icontop">
         <a href="#header" class="back_to_top"><i class="fas fa-angle-double-up"></i></a>
       </div>
